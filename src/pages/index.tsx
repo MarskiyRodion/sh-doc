@@ -35,15 +35,15 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <PrimeReactProvider>
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-      <script src="antd/dist/antd.min.js"></script>
-    </Layout>
-</PrimeReactProvider>
+      <Layout
+        title={`Hello from ${siteConfig.title}`}
+        description="Description will go into a meta tag in <head />">
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+        </main>
+        <script src="antd/dist/antd.min.js"></script>
+      </Layout>
+    </PrimeReactProvider>
   );
 }
