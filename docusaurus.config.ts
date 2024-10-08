@@ -9,13 +9,13 @@ const config: Config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  organizationName: 'z1cat',
+  organizationName: 'MarskiyRodion',
   projectName: 'sh-doc',
   deploymentBranch: 'main',
   trailingSlash: true,
 
   // Set the production url of your site here
-  url: 'https://1zaboy.github.io/',
+  url: 'https://MarskiyRodion.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/sh-doc/',
