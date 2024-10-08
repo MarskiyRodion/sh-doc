@@ -1,0 +1,110 @@
+import { TabView, TabPanel } from 'primereact/tabview';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Mermaid from '@theme/Mermaid';
+
+export var year = Math.floor(Math.random() * 2000);
+
+# Last year’s snowfall
+In {year}, the snowfall was above average.
+
+
+asdlfkjahsdlkfkjashdkfjhasdlfkjahsldkjfhasldkfkjhasdkfjh
+
+## Primereact tabs
+<TabView>
+    <TabPanel header="Header I">
+        In {year}, the snowfall was above average.
+    </TabPanel>
+    <TabPanel header="Header II">
+        <p className="m-0">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+            enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+            ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+        </p>
+    </TabPanel>
+    <TabPanel header="Header III">
+        <p className="m-0">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti 
+            quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+            culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+        </p>
+    </TabPanel>
+</TabView>
+
+## Native tabs
+<Tabs>
+  <TabItem value="code" label="Code" default>
+    ```jsx title="/src/components/HelloCodeTitle.js"
+        function HelloCodeTitle(props) {
+            return <h1>Hello, {props.name}</h1>;
+        }
+    ```
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    This is an orange 🍊
+  </TabItem>
+  <TabItem value="banana" label="Banana">
+    This is a banana 🍌
+  </TabItem>
+</Tabs>
+
+## Netive Admonitions
+:::note
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::tip
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::info
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::warning
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::danger
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+
+## Assets
+
+[Download this docx using Markdown](./../assets/test.txt)
+
+
+## Markdown links
+- [URL path to another document](./intro.md)
+- [file path to another document](./tutorial-extras/manage-docs-versions.md)
+
+
+
+## Mermaid
+<Mermaid
+  value={`---
+title: Simple sample
+---
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]`}
+/>
